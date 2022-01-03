@@ -1,0 +1,20 @@
+{ 
+   "type": "postgres", 
+   "host": "fsd_project_backend_database_1", 
+   "port": 5432, 
+   "username": "postgres", 
+   "password": "", 
+   "database": "fsd_database", 
+   "synchronize": true, 
+   "logging": false, 
+   "entities": [
+      "src/entity/**/*.ts" 
+   ], 
+   "migrations": [ "src/migration/**/*.ts" 
+   ], 
+   "subscribers": [ "src/subscriber/**/*.ts" 
+   ], 
+   "cli": { 
+      "entitiesDir": "src/entity", "migrationsDir": "src/migration", "subscribersDir": "src/subscriber" 
+   } 
+}
